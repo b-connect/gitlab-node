@@ -1,6 +1,6 @@
 FROM mhart/alpine-node
 
-RUN apk add --update python make g++ git
+RUN apk add --update python make g++ git bash
 ADD runner.sh /runner.sh
 RUN chmod +x /runner.sh
 
