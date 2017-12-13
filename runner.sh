@@ -7,9 +7,10 @@ do
   then
     cd $i;
     npm i
-    npm run build:dev
+    npm run build:dev &
+    echo "Start processing ${i}"
   else
-    echo "No package"
+    echo "No package found on ${i}"
   fi
 
 done
