@@ -4,7 +4,7 @@ if [ -e "/app/package.json" ]
 then
   cd /app
   npm i
-  npm run build:dev
+  npm run watch
 else
   echo "No packages found"
 fi
